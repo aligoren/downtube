@@ -8,9 +8,9 @@ Aşağıda gereksinimler yazıyor. Pafy ile hallettim olayı ancak pafy de youtu
 
 ### Requirements
 
-  Flask
-  Pafy
-  Youtube-Dl
+    - Flask
+    - Pafy
+    - Youtube-Dl
 
 ### Test
 
