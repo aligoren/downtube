@@ -1,0 +1,80 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main {
+    float: left;
+    width: 100%;
+    height: 30px;
+    margin-left: 20%;
+}
+
+.vid_tit {
+    font-size: 20px;
+}
+
+.video_main {
+    float: left;
+    margin-top: 70px;
+}
+
+.vm_title {
+    float: left;
+    width: 520px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 102, 0);
+    margin-left: 40px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+
+}
+
+.video_player {
+    width: 540px;
+    height: 380px;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.video_info_main {
+    float: left;
+    margin-top: 70px;
+}
+
+.vi_title {
+    float: left;
+    width: 520px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 102, 153);
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+}
+
+.vin_main {
+    width: 540px;
+    height: 380px;
+}
+
+.video_info_area {
+    padding-left: 40px;
+    padding-top: 60px;
+
+}
+
+.container {
+    width: 70%;
+}
+
+.hr_dot {
+    width: 510px;
+    padding-left: 0px;
+    margin-left: 0px;
+    border: 1px;
+    border-style: dotted;
+    border-color: black;
+
+}
+

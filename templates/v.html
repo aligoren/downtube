@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>{{ er_tit }}</title>
+    {% endif %}
+    <link rel="stylesheet" href="{{ sty }}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <div class="container">
+        {% if title %}
+        <div class="main">
+            <div class="video_main">
+                <div class="vm_title">
+                    <h1 class="vid_tit" style="color:#fff;">VIDEO</h1>
+                </div>
+                <div class="video_player">
+                    <iframe width="560" height="380" src="https://www.youtube.com/embed/{{ yid }}" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video_info_main">
+                <div class="vi_title">
+                    <h1 class="vid_tit" style="color:#fff;">VIDEO INFORMATION</h1>
+                </div>
+                <div class="vin_main">
+                    <div class="video_info_area">
+                        <strong>Tİtle:</strong> {{ title }}
+                        <hr class="hr_dot" />
+                        <strong>Description:</strong> {{ desc }}
+                        <hr class="hr_dot" />
+                        <strong>Uploaded By:</strong> {{ author }}
+                        <hr class="hr_dot" />
+                        <strong>Views:</strong> {{ views }}
+                        <hr class="hr_dot" />
+                        <strong>Rating:</strong> {{ rating }}
+                        <hr class="hr_dot" />
+                        <strong>Download - Best Quality:</strong> <a href="{{ best_url }}">Download({{ ext }}) - {{ res }}</a>
+                        <br />
+                        <hr class="hr_dot" /> {% for stuls,stress,stexs in li_do %}
+                        <strong>Download:</strong> <a href="{{ stuls }}">Download({{ stress }}) - {{ stexs }}</a>
+                        <br /> {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="dialog">
+            <p>
+			</p>
+			<p>
+			</p>
+                {{ er_str }}
+             <p>
+			</p>
+			<p>
+			</p>
+            </div>
+            {% endif %}
+            
+        </div>
+    </div>
+</body>
+
+</html>
