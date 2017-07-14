@@ -52,4 +52,4 @@ def error404(e):
     return redirect("/", code=302)
 
 if __name__ == "__main__":
-    app.run(app.debug=True, port=33507)
+    app.run(debug=False, port=33507)
